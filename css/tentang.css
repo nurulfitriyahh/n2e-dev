@@ -1,0 +1,394 @@
+
+/* TENTANG N2E DEV */
+
+.about-container {
+    width: min(1120px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+.about-hero {
+    padding: 85px 0 90px;
+    background:
+        radial-gradient(ellipse at 80% 15%, rgba(255, 135, 71, .13), transparent 45%),
+        #101014;
+}
+
+.about-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #ff8747;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.about-hero h1 {
+    max-width: 900px;
+    margin: 0;
+    color: #f7f7fa;
+    font-size: clamp(38px, 6vw, 66px);
+    line-height: 1.12;
+    letter-spacing: -2px;
+}
+
+.about-hero h1 span,
+.about-cta h2 span {
+    display: block;
+    color: #ff8747;
+}
+
+.about-intro {
+    max-width: 700px;
+    margin: 24px 0 30px;
+    color: #aaaab5;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.about-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 14px 23px;
+    border: 1px solid #ff8747;
+    border-radius: 999px;
+    background: #ff8747;
+    color: #171717;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .25s ease;
+}
+
+.about-button:hover {
+    background: #ffa16f;
+    transform: translateY(-2px);
+}
+
+/* PROFIL */
+
+.about-profile {
+    padding: 80px 0;
+    background: #151519;
+}
+
+.about-profile-grid {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.about-profile-heading h2,
+.about-section-heading h2,
+.about-approach h2 {
+    margin: 0;
+    color: #f7f7fa;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.25;
+    letter-spacing: -1px;
+}
+
+.about-profile-text p {
+    margin: 0 0 18px;
+    color: #aaaab5;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+/* HEADING BAGIAN */
+
+.about-demo,
+.about-gallery {
+    padding: 85px 0;
+    background: #101014;
+}
+
+.about-gallery {
+    background: #151519;
+}
+
+.about-section-heading {
+    max-width: 680px;
+    margin-bottom: 35px;
+}
+
+.about-section-heading h2 {
+    margin-bottom: 15px;
+}
+
+.about-section-heading p {
+    margin: 0;
+    color: #aaaab5;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* VIDEO */
+
+.demo-video-wrapper {
+    overflow: hidden;
+    border: 1px solid #333139;
+    border-radius: 20px;
+    background: #08080a;
+}
+
+.demo-video-wrapper video {
+    display: block;
+    width: 100%;
+    max-height: 650px;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+}
+
+/* DUA GAMBAR */
+
+.demo-image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.demo-image-card {
+    overflow: hidden;
+    margin: 0;
+    border: 1px solid #343139;
+    border-radius: 18px;
+    background: #1b1a20;
+}
+
+.demo-image-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    transition: transform .35s ease;
+}
+
+.demo-image-card:hover img {
+    transform: scale(1.035);
+}
+
+.demo-image-card figcaption {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 20px;
+    color: #f1f1f5;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.demo-image-card figcaption span {
+    color: #ff8747;
+    font-size: 12px;
+}
+
+/* PENDEKATAN */
+
+.about-approach {
+    padding: 85px 0;
+    background: #101014;
+}
+
+.about-approach h2 {
+    max-width: 700px;
+    margin-bottom: 38px;
+}
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.approach-card {
+    padding: 27px;
+    border: 1px solid #302f36;
+    border-radius: 18px;
+    background: #18181d;
+}
+
+.approach-card > span {
+    color: #ff8747;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.approach-card h3 {
+    margin: 24px 0 12px;
+    color: #f5f5f8;
+    font-size: 18px;
+}
+
+.approach-card p {
+    margin: 0;
+    color: #aaaab5;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* CTA */
+
+.about-cta {
+    padding: 90px 0;
+    text-align: center;
+    background:
+        radial-gradient(ellipse at 50% 100%, rgba(255, 135, 71, .13), transparent 55%),
+        #151519;
+}
+
+.about-cta h2 {
+    margin: 0;
+    color: #f7f7fa;
+    font-size: clamp(32px, 5vw, 50px);
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.about-cta p {
+    margin: 20px 0 28px;
+    color: #aaaab5;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 760px) {
+    .about-container {
+        width: calc(100% - 32px);
+    }
+
+    .about-hero {
+        padding: 60px 0 65px;
+    }
+
+    .about-hero h1 {
+        font-size: clamp(35px, 9vw, 48px);
+        letter-spacing: -1px;
+    }
+
+    .about-profile-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .demo-image-grid,
+    .approach-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-demo,
+    .about-gallery,
+    .about-approach {
+        padding: 60px 0;
+    }
+
+    .about-cta {
+        padding: 65px 0;
+    }
+}
+
+.about-demo-row {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    align-items: center;
+    gap: 45px;
+}
+
+.about-demo-text h2 {
+    margin: 0;
+    color: #f7f7fa;
+    font-size: clamp(26px, 3vw, 38px);
+    line-height: 1.25;
+}
+
+.about-demo-text p {
+    margin: 16px 0 22px;
+    color: #aaaab5;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.about-demo-preview {
+    overflow: hidden;
+    border: 1px solid #343139;
+    border-radius: 16px;
+    background: #08080a;
+}
+
+.about-demo-preview video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+}
+
+@media (max-width: 760px) {
+    .about-demo-row {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+/* FOTO TIM N2E DEV */
+
+.about-gallery .about-team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px;
+}
+
+.about-team-image {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #343139;
+    border-radius: 18px;
+}
+
+.about-team-image img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 5 / 4;
+    object-fit: cover;
+}
+
+.team-image-label {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    padding: 8px 13px;
+    border-radius: 999px;
+    background: rgba(15, 15, 18, .85);
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.about-team-content h2 {
+    margin: 0;
+    color: #f7f7fa;
+    font-size: clamp(28px, 3.5vw, 40px);
+    line-height: 1.25;
+}
+
+.about-team-content h2 span {
+    display: block;
+    color: #ff8747;
+}
+
+.about-team-content p {
+    color: #aaaab5;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+@media (max-width: 760px) {
+    .about-gallery .about-team-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}

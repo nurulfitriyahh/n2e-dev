@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kontak | N2E Dev</title>
+    <meta name="description" content="Hubungi N2E Dev untuk konsultasi website tugas akhir mahasiswa.">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/layout.js" defer></script>
+
+    <style>
+        .contact-hero {
+            padding: 90px 20px 45px;
+            text-align: center;
+        }
+
+        .contact-container {
+            width: min(1100px, calc(100% - 40px));
+            margin: 0 auto;
+        }
+
+        .contact-label {
+            color: #ff8747;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .contact-hero h1 {
+            margin: 18px 0;
+            color: #f7f7fa;
+            font-size: clamp(34px, 5vw, 54px);
+            line-height: 1.2;
+        }
+
+        .contact-hero h1 span {
+            color: #ff8747;
+        }
+
+        .contact-hero p {
+            max-width: 620px;
+            margin: 0 auto;
+            color: #aaaab5;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .contact-section {
+            padding: 25px 0 90px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 25px;
+            align-items: stretch;
+        }
+
+        .contact-info,
+        .contact-map {
+            padding: 28px;
+            background: #19191f;
+            border: 1px solid #343139;
+            border-radius: 18px;
+        }
+
+        .contact-info h2,
+        .contact-map h2 {
+            margin: 0 0 12px;
+            color: #f7f7fa;
+            font-size: 23px;
+        }
+
+        .contact-description {
+            margin-bottom: 28px;
+            color: #aaaab5;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .contact-item {
+            display: block;
+            margin-top: 16px;
+            padding: 17px;
+            color: #f7f7fa;
+            text-decoration: none;
+            background: #222228;
+            border: 1px solid #343139;
+            border-radius: 12px;
+            transition: border-color .2s ease;
+        }
+
+        .contact-item:hover {
+            border-color: #ff8747;
+        }
+
+        .contact-item small {
+            display: block;
+            margin-bottom: 7px;
+            color: #ff8747;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .contact-item span {
+            font-size: 14px;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-map iframe {
+            display: block;
+            width: 100%;
+            height: 350px;
+            margin-top: 20px;
+            border: 0;
+            border-radius: 12px;
+        }
+
+        .map-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: #ff8747;
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        .map-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 760px) {
+            .contact-hero {
+                padding-top: 65px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info,
+            .contact-map {
+                padding: 22px;
+            }
+
+            .contact-map iframe {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar-placeholder"></div>
+
+    <main>
+        <section class="contact-hero">
+            <div class="contact-container">
+                <span class="contact-label">HUBUNGI N2E DEV</span>
+
+                <h1>
+                    Mari Bahas <span>Proyekmu.</span>
+                </h1>
+
+                <p>
+                    Punya rencana membuat website untuk tugas akhir?
+                    Hubungi kami untuk membicarakan kebutuhan proyek,
+                    fitur yang diinginkan, dan gambaran pengerjaannya.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-grid">
+
+                    <div class="contact-info">
+                        <h2>Informasi Kontak</h2>
+
+                        <p class="contact-description">
+                            Pilih salah satu cara berikut untuk menghubungi
+                            tim N2E Dev.
+                        </p>
+
+                        <a
+                            class="contact-item"
+                            href="mailto:developer.n2e@gmail.com"
+                        >
+                            <small>EMAIL</small>
+                            <span>developer.n2e@gmail.com</span>
+                        </a>
+
+                        <a
+                            class="contact-item"
+                            href="https://wa.me/6285743997608"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <small>WHATSAPP</small>
+                            <span>Chat N2E Dev ↗</span>
+                        </a>
+
+                        <a
+                            class="contact-item"
+                            href="https://maps.app.goo.gl/LSsP4iiY8KtoSGz6A"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <small>LOKASI</small>
+                            <span>Buka lokasi di Google Maps ↗</span>
+                        </a>
+                    </div>
+
+                    <div class="contact-map">
+                        <h2>Lokasi Kami</h2>
+
+                        <p class="contact-description">
+                            Lihat lokasi melalui peta di bawah ini.
+                        </p>
+
+<iframe
+    src="https://maps.google.com/maps?q=-6.3458026,106.5529234&z=17&output=embed"
+    title="Lokasi N2E Dev di Google Maps"
+    width="100%"
+    height="370"
+    style="border:0;"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+<a
+    class="map-link"
+    href="https://maps.app.goo.gl/LSsP4iiY8KtoSGz6A"
+    target="_blank"
+    rel="noopener noreferrer">
+    ↗ Buka lokasi N2E Dev di Google Maps
+</a>
+
+                        <a
+                            class="map-link"
+                            href="https://maps.app.goo.gl/LSsP4iiY8KtoSGz6A"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Buka peta di Google Maps ↗
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+</body>
+</html>
